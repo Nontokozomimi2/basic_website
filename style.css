@@ -1,0 +1,191 @@
+/* Default styles for small screens */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00ff00; /* Green background for small screens */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+h2 {
+    color: #16a085;
+    border-bottom: 2px solid #16a085;
+    padding-bottom: 5px;
+}
+
+.intro {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.intro img {
+    border-radius: 50%;
+    border: 2px solid #16a085;
+}
+
+/* Which City Section */
+.paris {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.paris img {
+    margin: 10px;
+    max-width: 100%;
+}
+
+.france {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 1;
+}
+
+/* Foreign Language Section */
+.foreign-language {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Table Section */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #bdc3c7;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+/* Favorite Subjects Section */
+.three-favorite-subjects {
+    background-color: #f9e79f;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.three-favorite-subjects h3 {
+    color: #d35400;
+}
+
+.three-favorite-subjects img {
+    margin: 10px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Historical Places Section */
+.three-historical-places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.three-historical-places div {
+    flex: 1;
+    margin: 10px;
+}
+
+.three-historical-places h3 {
+    color: #8e44ad;
+}
+
+.three-historical-places img {
+    margin: 10px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .paris {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .three-favorite-subjects,
+    .three-historical-places {
+        display: block;
+    }
+
+    .three-favorite-subjects div,
+    .three-historical-places div {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .three-favorite-subjects img,
+    .three-historical-places img {
+        margin: 0 20px 0 0;
+        max-width: 50%;
+    }
+}
+
+/* Large screen styles */
+@media (min-width: 769px) {
+    body {
+        background-color: #ff69b4; /* Pink background for large screens */
+    }
+
+    .paris {
+        flex-direction: row;
+    }
+
+    .three-favorite-subjects,
+    .three-historical-places {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .three-favorite-subjects div,
+    .three-historical-places div {
+        flex: 1;
+        margin: 10px;
+        display: block;
+    }
+
+    .three-favorite-subjects img,
+    .three-historical-places img {
+        margin: 10px 0;
+        max-width: 100%;
+    }
+}
